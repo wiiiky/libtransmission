@@ -15,15 +15,15 @@ All Rights reserved by [Transmission]
 
 ### Dependencies
 Libtransmission depends on some third-party libraries,they are
-			libdht
-			libudp
-			libminiupnp
-			libnatpmp
-			libevent
-			libcurl
-			libopenssl
-			Posix Thread
-			zlib
+		libdht
+		libudp
+		libminiupnp
+		libnatpmp
+		libevent
+		libcurl
+		libopenssl
+		Posix Thread
+		zlib
 
 And some of them, libdht, libudp, libminiupnp, libnatpmp are included in
 the repository, while others not.
@@ -31,7 +31,7 @@ the repository, while others not.
 ### Compile
 If you want to compile your code with libtransmission, do it like following
 command:
-			gcc code.c -L. -ltransmission -ldht -lutp -lminiupnp -lnatpmp -levent -lcurl -lssl -lcrypto -pthread -lz
+		gcc code.c -L. -ltransmission -ldht -lutp -lminiupnp -lnatpmp -levent -lcurl -lssl -lcrypto -pthread -lz
 
 Of course you can put your code in another directory,
    and you know how to link libtransmission and it's dependencies.
