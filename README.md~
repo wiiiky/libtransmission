@@ -16,7 +16,6 @@ All Rights reserved by Transmission
 
 ### Dependencies
 Libtransmission depends on some third-party libraries,they are
-
 		libdht
 		libudp
 		libminiupnp
@@ -33,7 +32,6 @@ the repository, while others not.
 ### Compile
 If you want to compile your code with libtransmission, do it like following
 command:
-
 		gcc code.c -L. -ltransmission -ldht -lutp -lminiupnp -lnatpmp -levent -lcurl -lssl -lcrypto -pthread -lz
 
 Of course you can put your code in another directory,
