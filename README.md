@@ -39,3 +39,10 @@ command:
 Of course you can put your code in another directory,
    and you know how to link libtransmission and it's dependencies.
 
+### Help
+You may need some help to use libtransmission.
+
+What a pity that libtransmission is not well documented, but you can help yourself and get help in IRC freenode #transmission channel too.
+
+### Good Luck
+
