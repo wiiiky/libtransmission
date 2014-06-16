@@ -42,7 +42,9 @@ Of course you can put your code in another directory,
 ### Help
 You may need some help to use libtransmission.
 
-What a pity that libtransmission is not well documented, but you can help yourself and get help in IRC freenode #transmission channel too.
+What a pity that libtransmission is not well documented.
+
+But you can help yourself and get help in IRC freenode #transmission channel too.
 
 ### Good Luck
 
