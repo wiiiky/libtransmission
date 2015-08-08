@@ -1,0 +1,12 @@
+libtransmission
+=============
+
+## Introduce
+
+libtransmission is a [BitTorrent](https://en.wikipedia.org/wiki/Bittorrent) Library written in C used by the famous BitTorrent Client [Transmission](http://www.transmissionbt.com/).
+
+libtransmission is not released individually. I hack the source code of Transmission and make this library.
+
+## Run
+
+    ./src/wdl

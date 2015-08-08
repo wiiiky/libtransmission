@@ -19,7 +19,7 @@ AM_CFLAGS = \
   $(PTHREAD_CFLAGS) \
   $(ZLIB_CFLAGS)
 
-noinst_LTLIBRARIES = libtransmission.la
+lib_LTLIBRARIES = libtransmission.la
 
 
 libtransmission_la_SOURCES = \

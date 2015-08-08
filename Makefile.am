@@ -14,3 +14,9 @@ dist_doc_DATA = \
 # Remove doc directory on uninstall
 uninstall-local:
 	-rm -r $(docdir)
+	-rm -r $(libtransmissiondir)
+
+install-exec-local:
+	-ldconfig
+
+
