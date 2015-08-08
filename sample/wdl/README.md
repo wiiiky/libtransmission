@@ -7,3 +7,7 @@ WDL is a download manager that supports FTP,HTTP and BitTorrent. It's developed 
 WDL uses libcurl to download from FTP and HTTP, and uses libtransmission to download from BitTorrent.
 
 I put it here just as a sample of libtransmission.
+
+## Run
+
+    ./src/wdl
