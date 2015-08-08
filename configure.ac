@@ -25,7 +25,7 @@ AC_SUBST(OPENSSL_MINIMUM)
 
 
 DHT_CFLAGS="-I\$(top_srcdir)/third-party/dht"
-DHT_LIBS="\$(top_builddir)/third-party/dht/libdht.a"
+DHT_LIBS="\$(top_builddir)/third-party/dht/libdht.la"
 AC_SUBST(DHT_CFLAGS)
 AC_SUBST(DHT_LIBS)
 
@@ -48,7 +48,7 @@ AC_ARG_ENABLE([utp],
 if test "x$want_utp" = "xyes" ; then
     if test "x$have_utp" = "xyes"; then
         LIBUTP_CFLAGS="-I\$(top_srcdir)/third-party/"
-        LIBUTP_LIBS="\$(top_builddir)/third-party/libutp/libutp.a"
+        LIBUTP_LIBS="\$(top_builddir)/third-party/libutp/libutp.la"
         if test "x$libutp_extra_libs" != "x" ; then
             LIBUTP_LIBS="$LIBUTP_LIBS $libutp_extra_libs"
         fi
@@ -147,7 +147,7 @@ AC_MSG_RESULT([$upnp_version])
 AM_CONDITIONAL([BUILD_MINIUPNP],[test "x$upnp_version" = "xnone"])
 if test "x$upnp_version" = "xnone" ; then
     LIBUPNP_CFLAGS="-I\$(top_srcdir)/third-party/"
-    LIBUPNP_LIBS="\$(top_builddir)/third-party/miniupnp/libminiupnp.a"
+    LIBUPNP_LIBS="\$(top_builddir)/third-party/miniupnp/libminiupnp.la"
 else
     AC_DEFINE([SYSTEM_MINIUPNP])
     LIBUPNP_CFLAGS=""
@@ -157,7 +157,7 @@ AC_SUBST(LIBUPNP_CFLAGS)
 AC_SUBST(LIBUPNP_LIBS)
 
 LIBNATPMP_CFLAGS="-I\$(top_srcdir)/third-party/libnatpmp/"
-LIBNATPMP_LIBS="\$(top_builddir)/third-party/libnatpmp/libnatpmp.a"
+LIBNATPMP_LIBS="\$(top_builddir)/third-party/libnatpmp/libnatpmp.la"
 build_bundled_natpmp="yes"
 AC_ARG_ENABLE([external-natpmp],
               AS_HELP_STRING([--enable-external-natpmp],[Use system external-natpmp]),

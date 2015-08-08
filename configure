@@ -15187,7 +15187,7 @@ OPENSSL_MINIMUM=0.9.4
 
 
 DHT_CFLAGS="-I\$(top_srcdir)/third-party/dht"
-DHT_LIBS="\$(top_builddir)/third-party/dht/libdht.a"
+DHT_LIBS="\$(top_builddir)/third-party/dht/libdht.la"
 
 
 
@@ -15252,7 +15252,7 @@ fi
 if test "x$want_utp" = "xyes" ; then
     if test "x$have_utp" = "xyes"; then
         LIBUTP_CFLAGS="-I\$(top_srcdir)/third-party/"
-        LIBUTP_LIBS="\$(top_builddir)/third-party/libutp/libutp.a"
+        LIBUTP_LIBS="\$(top_builddir)/third-party/libutp/libutp.la"
         if test "x$libutp_extra_libs" != "x" ; then
             LIBUTP_LIBS="$LIBUTP_LIBS $libutp_extra_libs"
         fi
@@ -15429,7 +15429,7 @@ fi
 
 if test "x$upnp_version" = "xnone" ; then
     LIBUPNP_CFLAGS="-I\$(top_srcdir)/third-party/"
-    LIBUPNP_LIBS="\$(top_builddir)/third-party/miniupnp/libminiupnp.a"
+    LIBUPNP_LIBS="\$(top_builddir)/third-party/miniupnp/libminiupnp.la"
 else
     $as_echo "#define SYSTEM_MINIUPNP 1" >>confdefs.h
 
@@ -15440,7 +15440,7 @@ fi
 
 
 LIBNATPMP_CFLAGS="-I\$(top_srcdir)/third-party/libnatpmp/"
-LIBNATPMP_LIBS="\$(top_builddir)/third-party/libnatpmp/libnatpmp.a"
+LIBNATPMP_LIBS="\$(top_builddir)/third-party/libnatpmp/libnatpmp.la"
 build_bundled_natpmp="yes"
 # Check whether --enable-external-natpmp was given.
 if test "${enable_external_natpmp+set}" = set; then :

@@ -19,7 +19,7 @@ AM_CFLAGS = \
   $(PTHREAD_CFLAGS) \
   $(ZLIB_CFLAGS)
 
-lib_LTLIBRARIES = libtransmission.la
+noinst_LTLIBRARIES = libtransmission.la
 
 
 libtransmission_la_SOURCES = \
@@ -77,7 +77,7 @@ libtransmission_la_SOURCES = \
 	webseed.c \
 	wildmat.c
 
-libtransmission_la_LDFLAGS =
+#libtransmission_a_LDFLAGS =
 
 libtransmission_la_LIBADD =\
 	$(LIBUPNP_LIBS) \
